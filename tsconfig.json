@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    // Input
+    "baseUrl": ".",
+    "rootDir": "src",
+    "paths": {
+      "assets/*": [
+        "assets/*"
+      ]
+    },
+    "allowJs": false,
+
+    // Coding style
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "newLine": "LF",
+    "noEmitOnError": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "suppressImplicitAnyIndexErrors": true,
+
+    // Output
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "sourceMap": true,
+    "declaration": false,
+    "outDir": "build",
+    "removeComments": true,
+    "lib": ["es2018", "dom"],
+
+    // Other
+    "skipLibCheck": true
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./node_modules/phaser3-docs/typescript/phaser.d.ts",
+    "./custom_typings/**/*.d.ts"
+  ]
+}

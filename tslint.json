@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "@rebeccastevens/tslint-rebeccastevens"
+  ],
+  "rules": {
+    "early-exit": false,
+    "no-empty": {
+      "severity": "warning"
+    },
+    "no-implicit-dependencies": [
+      true, [
+        "assets"
+      ]
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*"
+    ]
+  }
+}
